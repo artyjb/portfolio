@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Arthur Brown</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="../resume/index.html">Resume</a></li>
+            <li><a href="https://github.com/arthurbrown" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
+    <h1>Contact</h1>
+    <p>Feel free to reach out to me through this page.</p>
+    <form action="mailto:ajbrown@ucsd.edu" method="POST" enctype="text/plain">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        <br><br>
+        <label for="Body">Body:</label>
+        <textarea id="Body" name="body" rows="5" required></textarea>
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Arthur Brown: Personal site and portfolio"</title>
+    <title>Arthur Brown: Personal site and portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .scaled-image {
+            width: 50%; /* Adjust the width as needed */
+            max-width: 400px; /* Optional: Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects/index.html">Projects</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+            <li><a href="resume/index.html">Resume</a></li>
+            <li><a href="https://github.com/arthurbrown" target="_blank">GitHub</a></li>
+        </ul>
+    </nav>
     <h1>Arthur Brown</h1>
     <p>UCSD Student Graduating in June 2025. I am a Joint Mathematics and Economics Major with a Data Science Minor. I like playing basketball, golf and tennis. 
     My career interests are to be an actuary. I am also a huge steelers fan. Right now I am looking for post graduation jobs.</p>
-    </p>
-    
+    <figure>
+        <img src="images/github_skiing.jpeg" alt="Me Skiing at Park City" class="scaled-image">
+        <figcaption>Me Skiing at Park City</figcaption>
+    </figure>
 </body>
 </html>
