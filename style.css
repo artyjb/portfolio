@@ -1,0 +1,165 @@
+/* Define the accent color on the <html> element */
+html {
+    --color-accent: #2a92c9; /* Set the accent color to a darker blue */
+    accent-color: var(--color-accent); /* Apply the accent color globally */
+    
+}
+
+/* Body styling */
+body {
+    font: 100%/1.5 system-ui; /* Set line height and font */
+    max-width: 100ch; /* Limit body width */
+    margin-inline: auto; /* Center content horizontally */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex; /* Enable Flexbox layout */
+    justify-content: space-around; /* Space out links evenly */
+    align-items: center; /* Align items vertically */
+    padding: 10px 0; /* Add padding for spacing */
+    border-bottom: 1px solid oklch(80% 3% 200); /* Add a bottom gray border */
+    position: relative; /* Enable positioning for pseudo-elements */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Make the <ul> a flex container */
+    gap: 20px; /* Add spacing between items */
+    width: 100%; /* Ensure the navigation spans the full width */
+}
+
+nav li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    flex: 1; /* Make each link take up equal space */
+    text-align: center; /* Center the text within each link */
+}
+
+/* Navigation links */
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Use the current text color */
+    font-weight: bold; /* Optional: Make links bold */
+    padding: 0.5em; /* Add spacing around each link */
+    text-align: center; /* Center the text inside the link box */
+    display: block; /* Ensure the link behaves like a block element */
+    position: relative; /* Enable positioning for pseudo-elements */
+}
+
+/* Current page link styling */
+nav a.current {
+    color: inherit; /* Keep the text color unchanged */
+    font-weight: bold; /* Make it stand out */
+    padding-bottom: 0.1em; /* Reduce padding to counter the border height */
+    border-bottom: 0.4em solid oklch(80% 3% 200); /* Add a thick gray bottom border */
+}
+
+/* Hover effect for navigation links */
+nav a:hover:not(.current)::after {
+    content: ""; /* Add a pseudo-element for the hover bar */
+    position: absolute;
+    bottom: -1px;/* Align the bar to overlap the nav's bottom border */
+    left: 0;
+    right: 0;
+    height: 0.4em; /* Match the desired thickness */
+    background-color: var(--color-accent); /* Use the accent color */
+    
+}
+
+/* Content container for text and image */
+.content-container {
+    margin: 0 auto; /* Center the content container */
+    max-width: 100ch; /* Limit the width of the content */
+    padding: 0 ; /* Add padding for spacing */
+}
+
+/* Paragraph inside the content container */
+.content-container p {
+    margin: 0 0 20px 0; /* Add spacing below the paragraph */
+}
+
+/* Figure inside the content container */
+.content-container figure {
+    margin: 0; /* Remove default margins */
+    text-align: left; /* Align the caption to the left */
+}
+
+/* Image inside the figure */
+.scaled-image {
+    max-width: 56%; /* Ensure the image does not exceed the width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any inline spacing issues */
+    margin-left: 0; /* Center the image horizontally */
+}
+
+/* Ensure form controls inherit the font from their parent */
+input, textarea, button {
+    font: inherit; /* Inherit font styles from parent elements */
+    padding: 0.5em; /* Add padding for better usability */
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    width: 100%; /* Make inputs and textarea span the full width of their container */
+    margin-bottom: 1em; /* Add spacing between form elements */
+}
+
+/* Style the form container */
+form {
+    width: 100%; /* Ensure the form spans the full width of its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 1em; /* Add padding inside the form */
+    background-color: #f9f9f9; /* Add a light background color */
+    border: 1px solid #ddd; /* Add a light border around the form */
+    border-radius: 10px; /* Add rounded corners to the form */
+    display: flex;
+    flex-direction: column; /* Stack form rows vertically */
+    gap: 1em; /* Add spacing between rows */
+}
+
+/* Style each form row */
+form .form-row {
+    display: flex; /* Align label and input side by side */
+    align-items: baseline; /* Align the label and input text baselines */
+    gap: 1em; /* Add spacing between the label and input */
+    width: 100%; /* Ensure the row spans the full width of the form */
+}
+
+/* Style the labels */
+form label {
+    flex: 0 0 90px; /* Set a fixed width for all labels (adjust as needed) */
+    text-align: left; /* Align the label text to the left */
+    margin: 0; /* Remove any default margins */
+}
+
+/* Style the inputs and textarea */
+input, textarea {
+    flex: 1; /* Allow inputs to take up the remaining space */
+    font: inherit; /* Inherit font styles from parent elements */
+    padding: 0.5em; /* Add padding for better usability */
+    border: 1px solid #ccc; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 0; /* Remove any default margins */
+    width: 100%; /* Ensure inputs span the full width of their container */
+}
+
+/* Style the submit button */
+button {
+    background-color: var(--color-accent); /* Use the accent color */
+    color: white; /* Make the text color white */
+    border: none; /* Remove the default border */
+    padding: 0.7em 1.5em; /* Add padding for better usability */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    font-weight: bold; /* Make the button text bold */
+    align-self: flex-start; /* Align the button to the left */
+}
+
+button:hover {
+    background-color: #1a6fa5; /* Darken the button color on hover */
+}

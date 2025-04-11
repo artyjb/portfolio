@@ -11,23 +11,26 @@
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects/index.html">Projects</a></li>
-            <li><a href="index.html">Contact</a></li>
+            <li><a href="index.html" class="current">Contact</a></li> <!-- Add class="current" -->
             <li><a href="../resume/index.html">Resume</a></li>
-            <li><a href="https://github.com/arthurbrown" target="_blank">GitHub</a></li>
+            <li><a href="https://github.com/artyjb" target="_blank">GitHub</a></li>
         </ul>
     </nav>
-    <h1>Contact</h1>
+    <h1>Contact Me</h1>
     <p>Feel free to reach out to me through this page.</p>
     <form action="mailto:ajbrown@ucsd.edu" method="POST" enctype="text/plain">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required>
-        <br><br>
-        <label for="Body">Body:</label>
-        <textarea id="Body" name="body" rows="5" required></textarea>
-        <br><br>
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-row">
+            <label for="Body">Message:</label>
+            <textarea id="Body" name="body" rows="5" required></textarea>
+        </div>
         <button>Submit</button>
     </form>
 </body>
