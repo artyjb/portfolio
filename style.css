@@ -7,10 +7,9 @@ html {
 
 /* Body styling */
 body {
-    font: 100%/1.5 system-ui; /* Set line height and font */
-    max-width: 100ch; /* Limit body width */
-    margin-inline: auto; /* Center content horizontally */
-    padding: 0 20px; /* Add padding for spacing */
+    font-family: "Arial", sans-serif; /* Use a professional sans-serif font */
+    font-size: 100%; /* Set base font size */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Navigation bar styling */
@@ -162,4 +161,265 @@ button {
 
 button:hover {
     background-color: #1a6fa5; /* Darken the button color on hover */
+}
+
+.projects {
+    display: grid; /* Make it a grid container */
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); /* Define responsive columns */
+    grid-template-rows: auto; /* Define rows explicitly to enable subgrid */
+    gap: 1em; /* Add spacing between grid items */
+}
+
+.projects article {
+    display: grid; /* Make each article a grid container */
+    grid-template-rows: subgrid; /* Use the subgrid from the parent grid */
+    grid-row: span 3; /* Span 3 rows in the parent grid */
+    margin: 0; /* Remove default margins */
+}
+
+.projects h2 {
+    margin: 0; /* Remove default margins */
+}
+
+/* Default styles for all headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1; /* Reduce leading for headings */
+    text-wrap: balance; /* Prevent uneven lines */
+    margin: 0.5em 0; /* Add consistent spacing above and below */
+}
+
+/* Specific size adjustments for headings */
+h1 {
+    font-size: 300%; /* Make <h1> significantly larger than body text */
+}
+
+h2 {
+    font-size: 150%; /* Make <h2> larger than body text but smaller than <h1> */
+}
+
+h3 {
+    font-size: 125%; /* Gradually decrease size for <h3> */
+}
+
+h4 {
+    font-size: 110%; /* Slightly larger than body text */
+}
+
+h5, h6 {
+    font-size: 100%; /* Same size as body text, but styled as headings */
+}
+
+.resume {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items at the top */
+    max-width: 100ch; /* Limit the width for readability */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 2em; /* Add padding around the content */
+}
+
+.resume h2 {
+    grid-column: 1 / -1; /* Make section headings span both columns */
+    font-size: 200%; /* Make section headings larger */
+    margin-bottom: 0.5em; /* Add spacing below headings */
+    color: var(--color-accent); /* Use the accent color */
+}
+
+.resume .job-title {
+    font-weight: bold; /* Emphasize job titles */
+    font-size: 120%; /* Slightly larger than body text */
+    margin-bottom: 0.2em; /* Add spacing below job titles */
+}
+
+.resume .job-details {
+    font-size: 90%; /* Slightly smaller for secondary details like dates */
+    color: #666; /* Use a muted color for less emphasis */
+    margin-bottom: 1em; /* Add spacing between jobs */
+}
+
+.resume ul.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); /* Responsive grid */
+    gap: 1em; /* Add spacing between skills */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.resume ul.skills li {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 0.5em 1em; /* Add padding */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center-align skill names */
+}
+
+.resume .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); /* Responsive grid */
+    gap: 1em; /* Add spacing between skills */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.resume .skills li {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 0.5em 1em; /* Add padding */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 5px; /* Add rounded corners */
+    text-align: center; /* Center-align skill names */
+}
+
+.resume .contact {
+    text-align: center; /* Center-align the name and contact info */
+    margin-bottom: 2em; /* Add spacing below the contact section */
+    border-bottom: 4px solid #000000; /* Add a thin grey line */
+    padding-bottom: 1em; /* Add spacing between the name and the line */
+    width: 100%; /* Ensure the contact section spans the full width */
+}
+
+.resume .contact h2 {
+    font-size: 250%; /* Make the name larger */
+    margin: 0; /* Remove default margins */
+}
+
+.resume .contact p {
+    margin: 0.5em 0; /* Add spacing below the contact info */
+    font-size: 100%; /* Keep the contact info at a normal size */
+    color: #666; /* Use a muted color for the contact details */
+}
+
+.resume .contact a {
+    color: #666; /* Set the link color to light grey */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Emphasize links */
+}
+
+.resume .contact a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.resume .timeline {
+    position: relative;
+    padding-left: 2em; /* Add space for the timeline line */
+    border-left: 2px solid #ddd; /* Add a vertical line */
+}
+
+.resume .timeline-item {
+    position: relative;
+    margin-bottom: 2em; /* Add spacing between items */
+}
+
+.resume .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -0.5em;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    background-color: var(--color-accent); /* Use the accent color */
+    border-radius: 50%; /* Make it a circle */
+    border: 2px solid white; /* Add a border for contrast */
+}
+
+.resume div, .resume ul {
+    margin-bottom: 2em; /* Add spacing between sections */
+}
+
+.resume p {
+    margin: 0.5em 0; /* Add spacing between paragraphs */
+    line-height: 1.5; /* Improve readability */
+}
+
+.resume .experience-heading {
+    color: var(--color-accent); /* Match the color of your name */
+    font-size: 200%; /* Make it stand out */
+    font-weight: bold; /* Emphasize the heading */
+    text-align: left; /* Align the heading to the left */
+    margin: 0 0 1em 0; /* Add spacing below the heading */
+     /* Align it with the separator line */
+     /* Optional: Add a subtle left border for emphasis */
+}
+
+.resume .experience {
+    width: 100%; /* Ensure the experience section spans the full width */
+    text-align: left; /* Align all content in this section to the left */
+}
+
+.resume .education {
+    margin-top: 2em; /* Add spacing above the education section */
+}
+
+.resume .education-heading {
+    color: #000; /* Match the color of other section headings */
+    font-size: 200%; /* Make it stand out */
+    font-weight: bold; /* Emphasize the heading */
+    margin-bottom: 1em; /* Add spacing below the heading */
+    text-align: left; /* Align the heading to the left */
+}
+
+.resume .school-name {
+    font-weight: bold; /* Emphasize the school name */
+    font-size: 120%; /* Slightly larger than body text */
+    margin-bottom: 0.2em; /* Add spacing below the school name */
+}
+
+.resume .degree {
+    font-size: 100%; /* Normal text size for the degree */
+    margin-bottom: 0.5em; /* Add spacing below the degree */
+    color: #666; /* Use a muted color for less emphasis */
+}
+
+.resume .dates {
+    font-size: 90%; /* Slightly smaller for dates */
+    color: #666; /* Use a muted color for less emphasis */
+}
+
+.resume .education-highlights {
+    list-style: disc; /* Use bullet points for highlights */
+    margin-left: 1.5em; /* Indent the list */
+    padding-left: 0; /* Remove default padding */
+}
+
+.resume .education-highlights li {
+    margin-bottom: 0.5em; /* Add spacing between list items */
+    line-height: 1.5; /* Improve readability */
+}
+
+.resume .skills-certifications {
+    width: 100%; /* Ensure the section spans the full width */
+    text-align: left; /* Align all content in this section to the left */
+    margin-top: 2em; /* Add spacing above the section */
+}
+
+.resume .skills, .resume .certifications {
+    margin-top: 1em; /* Add spacing between the header and the content */
+    margin-bottom: 1.5em; /* Add spacing between skills and certifications */
+    display: block; /* Ensure a block layout for proper alignment */
+}
+
+.resume .skills ul, .resume .certifications ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.resume .skills li, .resume .certifications li {
+    margin-bottom: 0.5em; /* Add spacing between items */
+    line-height: 1.5; /* Improve readability */
+    text-align: left; /* Align text to the left */
+    width: auto; /* Ensure the boxes don't stretch unnecessarily */
+    background-color: #f9f9f9; /* Optional: Keep the light background */
+    padding: 0.5em 1em; /* Add padding for better spacing */
+    border: 1px solid #ddd; /* Optional: Keep the subtle border */
+    border-radius: 5px; /* Optional: Keep rounded corners */
+}
+
+.resume .skills-certifications {
+    margin-top: 2em; /* Add spacing above the section */
+    text-align: left;
+}
+
+.resume .skills, .resume .certifications {
+    margin-bottom: 1.5em; /* Add spacing between skills and certifications */
 }
