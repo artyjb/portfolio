@@ -457,12 +457,45 @@ h5, h6 {
 }
 
 .resume .skills-certifications {
-    margin-top: 2em; /* Add spacing above the section */
+    margin-top: 0em; /* Add spacing above the section */
     text-align: left;
 }
 
 .resume .skills, .resume .certifications {
     margin-bottom: 1.5em; /* Add spacing between skills and certifications */
+}
+
+/* Ensure bullet points for lists in Skills, Projects, and Entrepreneurship */
+.resume .skills ul, .resume .certifications ul {
+    list-style: disc !important; /* Force bullet points */
+    margin-left: 1.5em; /* Add indentation for the bullets */
+    padding-left: 0; /* Remove extra padding */
+    border: none; /* Remove any borders */
+    background: none; /* Remove any background styling */
+}
+
+.resume .skills ul li, .resume .certifications ul li {
+    margin-bottom: 0.5em; /* Add spacing between bullet points */
+    padding: 0; /* Remove padding inside list items */
+    border: none; /* Remove any borders */
+    background: none; /* Remove any background styling */
+    text-align: left; /* Align text to the left */
+}
+
+/* Ensure bullet points for lists in Skills, Projects, and Entrepreneurship */
+.skills ul, .certifications ul {
+    list-style: disc; /* Use bullet points */
+    margin-left: 1.5em; /* Add indentation for the bullets */
+    padding-left: 0; /* Remove extra padding */
+    border: none; /* Remove any borders */
+    background: none; /* Remove any background styling */
+}
+
+.skills ul li, .certifications ul li {
+    margin-bottom: 0.5em; /* Add spacing between bullet points */
+    padding: 0; /* Remove padding inside list items */
+    border: none; /* Remove any borders */
+    background: none; /* Remove any background styling */
 }
 
 /* Add padding and center the contact container */
@@ -509,3 +542,4 @@ a:hover {
     padding: 0 1em; /* Add padding for spacing on smaller screens */
     box-sizing: border-box; /* Include padding in the total width */
 }
+
