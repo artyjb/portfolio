@@ -1,3 +1,11 @@
+/* Enable light and dark mode based on the user's system preferences */
+html {
+    color-scheme: light dark;
+    background-color: Canvas; /* System-defined background color */
+    color: CanvasText; /* System-defined text color */
+    border-bottom-color: var(--border-color);
+}
+
 /* Define the accent color on the <html> element */
 html {
     --color-accent: #2a92c9; /* Set the accent color to a darker blue */
@@ -7,6 +15,7 @@ html {
 
 /* Body styling */
 body {
+    margin: 0;
     font-family: "Arial", sans-serif; /* Use a professional sans-serif font */
     font-size: 100%; /* Set base font size */
     line-height: 1.6; /* Improve readability */
@@ -20,6 +29,20 @@ nav {
     padding: 10px 0; /* Add padding for spacing */
     border-bottom: 1px solid oklch(80% 3% 200); /* Add a bottom gray border */
     position: relative; /* Enable positioning for pseudo-elements */
+    --border-color: oklch(50% 10% 200 / 40%);
+    max-width: 1050px; /* Limit the maximum width of the navigation bar */
+    margin: 0 auto; /* Center the navigation bar horizontally */
+}
+
+nav::after {
+    content: ""; /* Add a pseudo-element for the line */
+    display: block;
+    width: 100%; /* Make the line span the full width of the nav */
+    height: 1px; /* Adjust the thickness of the line */
+    background-color: oklch(80% 3% 200); /* Match the border color */
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 nav ul {
@@ -53,20 +76,33 @@ nav a {
 nav a.current {
     color: inherit; /* Keep the text color unchanged */
     font-weight: bold; /* Make it stand out */
-    padding-bottom: 0.1em; /* Reduce padding to counter the border height */
-    border-bottom: 0.4em solid oklch(80% 3% 200); /* Add a thick gray bottom border */
+    position: relative; /* Enable positioning for the pseudo-element */
+}
+
+nav a.current::after {
+    content: ""; /* Add a pseudo-element for the underline */
+    position: absolute;
+    bottom: 0; /* Position the line at the bottom of the link */
+    left: -10%; /* Extend the line beyond the left edge */
+    right: -10%; /* Extend the line beyond the right edge */
+    height: 3px; /* Thickness of the line */
+    background-color: var(--color-accent); /* Use the accent color */
 }
 
 /* Hover effect for navigation links */
 nav a:hover:not(.current)::after {
-    content: ""; /* Add a pseudo-element for the hover bar */
+    content: ""; /* Add a pseudo-element for the hover underline */
     position: absolute;
-    bottom: -1px;/* Align the bar to overlap the nav's bottom border */
-    left: 0;
-    right: 0;
-    height: 0.4em; /* Match the desired thickness */
+    bottom: 0; /* Position the line at the bottom of the link */
+    left: -10%; /* Extend the line beyond the left edge */
+    right: -10%; /* Extend the line beyond the right edge */
+    height: 3px; /* Thickness of the line */
     background-color: var(--color-accent); /* Use the accent color */
-    
+}
+
+/* Remove the underline or bar on hover */
+nav a:hover {
+    text-decoration: none; /* Ensure no underline or bar appears */
 }
 
 /* Content container for text and image */
@@ -112,7 +148,7 @@ form {
     box-sizing: border-box; /* Include padding and border in the element's total width */
     margin: 0 auto; /* Center the form horizontally */
     padding: 1em; /* Add padding inside the form */
-    background-color: #f9f9f9; /* Add a light background color */
+    
     border: 1px solid #ddd; /* Add a light border around the form */
     border-radius: 10px; /* Add rounded corners to the form */
     display: flex;
@@ -167,7 +203,10 @@ button:hover {
     display: grid; /* Make it a grid container */
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); /* Define responsive columns */
     grid-template-rows: auto; /* Define rows explicitly to enable subgrid */
-    gap: 1em; /* Add spacing between grid items */
+    gap: 1.75em; /* Add spacing between grid items */
+    padding: 1em; /* Add padding inside the container */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 1300px; /* Limit the maximum width of the container */
 }
 
 .projects article {
@@ -175,6 +214,7 @@ button:hover {
     grid-template-rows: subgrid; /* Use the subgrid from the parent grid */
     grid-row: span 3; /* Span 3 rows in the parent grid */
     margin: 0; /* Remove default margins */
+     /* Optional: Add rounded corners */
 }
 
 .projects h2 {
@@ -186,6 +226,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1; /* Reduce leading for headings */
     text-wrap: balance; /* Prevent uneven lines */
     margin: 0.5em 0; /* Add consistent spacing above and below */
+     /* Add space to the left of the title */
 }
 
 /* Specific size adjustments for headings */
@@ -263,7 +304,7 @@ h5, h6 {
 }
 
 .resume .skills li {
-    background-color: #f9f9f9; /* Light background for contrast */
+    
     padding: 0.5em 1em; /* Add padding */
     border: 1px solid #ddd; /* Add a subtle border */
     border-radius: 5px; /* Add rounded corners */
@@ -409,7 +450,7 @@ h5, h6 {
     line-height: 1.5; /* Improve readability */
     text-align: left; /* Align text to the left */
     width: auto; /* Ensure the boxes don't stretch unnecessarily */
-    background-color: #f9f9f9; /* Optional: Keep the light background */
+     /* Optional: Keep the light background */
     padding: 0.5em 1em; /* Add padding for better spacing */
     border: 1px solid #ddd; /* Optional: Keep the subtle border */
     border-radius: 5px; /* Optional: Keep rounded corners */
@@ -422,4 +463,49 @@ h5, h6 {
 
 .resume .skills, .resume .certifications {
     margin-bottom: 1.5em; /* Add spacing between skills and certifications */
+}
+
+/* Add padding and center the contact container */
+.contact-container {
+    padding: 0em 2em; /* Add padding inside the container (1em top/bottom, 2em left/right) */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 12000px; /* Limit the maximum width of the container */
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+a {
+    color: Highlight; /* System-defined link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style the color scheme dropdown and position it in the top-right corner */
+.color-scheme {
+    position: absolute; /* Position it relative to the page */
+    top: 1em; /* Distance from the top of the page */
+    right: 1em; /* Distance from the right side of the page */
+    display: flex; /* Align the label and dropdown horizontally */
+    align-items: center; /* Center-align the items vertically */
+    gap: 0.3em; /* Reduce spacing between the label and the dropdown */
+    font-size: 0.85em; /* Reduce font size */
+}
+
+/* Style the dropdown */
+.color-scheme select {
+    padding: 0.3em 0.5em; /* Reduce padding inside the dropdown */
+    font-size: 0.85em; /* Match the font size of the label */
+    border: 1px solid #ccc; /* Keep the border */
+    border-radius: 3px; /* Slightly reduce the border radius */
+    cursor: pointer; /* Keep the pointer cursor */
+}
+
+/* Ensure all content matches the width of the header */
+.content-wrapper {
+    max-width: 1050px; /* Match the width of the navigation bar */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 1em; /* Add padding for spacing on smaller screens */
+    box-sizing: border-box; /* Include padding in the total width */
 }
