@@ -7,7 +7,7 @@ function $$(selector, context = document) {
 // Define the base path for local and production environments
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ? "/"                  // Local server
-  : "/website/";         // GitHub Pages repo name
+  : "/portfolio/";         // GitHub Pages repo name
 
 // Define the pages for navigation
 let pages = [
