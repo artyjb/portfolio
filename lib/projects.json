@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Stuckit Stickers",
+        "image": "../images/stuck_it.jpeg",
+        "description": "Stuckit Stickers is a product which allows skateboarders to share their tricks with the world. All you have to do is buy a sticker, scan the QR code, upload your skate trick to the sticker, and put the sticker where you please. Bonus points if you put the sticker where you did the trick! Learn more at <a href='https://www.stuckit.co/' target='_blank' rel='noopener noreferrer'>Stuckit.co</a>.",
+        "year": 2025
+    },
+    {
+        "title": "Grocery Store Visualization",
+        "image": "../images/dsc_project1.jpeg",
+        "description": "Class Project where we were asked to create a data visualization pertaining to data from grocery stores. I decided to create optimized shopping lists and showed the nutritional breakdown for each store.",
+        "year": 2025,
+        "link": "https://github.com/artyjb/portfolio/tree/main/images/dsc_project1"
+    },
+    {
+        "title": "Dolore repellat impedit repudiandae?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Blanditiis distinctio nemo similique libero alias officia ad odio natus aperiam, sit quibusdam eveniet officiis minus explicabo, cupiditate, iste est consequuntur voluptas facilis laboriosam consectetur quis in? Veniam, ullam nostrum?",
+        "year": 2023
+    },
+    {
+        "title": "Tenetur impedit quibusdam recusandae.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Cupiditate laborum quisquam dolor. Perspiciatis incidunt eligendi accusantium fugiat quasi asperiores rem reprehenderit minima recusandae veritatis laboriosam saepe, labore facilis quia odio quod similique cum deserunt mollitia officiis sit iste.",
+        "year": 2023
+    },
+    {
+        "title": "Hic cupiditate delectus incidunt!",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Et, esse distinctio? Voluptas, beatae maiores? Nihil vero enim ipsam eaque dolores praesentium dolorem officia vitae deleniti, odio veritatis, culpa illo maiores magnam sit? Aperiam perspiciatis molestias excepturi dolorem sequi.",
+        "year": 2022
+    },
+    {
+        "title": "Quibusdam optio porro nihil.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Similique exercitationem animi quisquam aperiam voluptas mollitia, blanditiis in architecto nulla accusamus itaque modi rerum nostrum officia laudantium doloremque ea dolor aliquid? Aut vitae autem veniam praesentium iste. Ipsam, quo.",
+        "year": 2022
+    },
+    {
+        "title": "Excepturi, sed iusto. Aliquam.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Consectetur, eaque minus aut, ipsa ad labore ullam accusamus quod fugiat libero commodi soluta dolores nulla nihil tempora debitis facilis velit sapiente beatae quo maiores, voluptatum itaque molestias? Veritatis, pariatur!",
+        "year": 2021
+    },
+    {
+        "title": "Voluptatibus in doloremque vel?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Culpa veritatis laborum eaque aperiam quis qui. Perspiciatis eius minima molestias ullam ea accusantium praesentium dignissimos quis sequi non dolorem iusto voluptatibus, earum illo laboriosam exercitationem ut nihil suscipit voluptatum!",
+        "year": 2021
+    },
+    {
+        "title": "Placeat cumque soluta magni.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ex similique soluta amet ratione maxime illo cupiditate, fugiat qui voluptas eum eos velit obcaecati quam voluptatibus nulla. Quas unde voluptatibus amet incidunt atque quasi earum tenetur inventore reiciendis omnis.",
+        "year": 2020
+    },
+    {
+        "title": "Natus esse rerum aliquam?",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Debitis magni accusamus vero exercitationem laudantium eaque repellendus assumenda perspiciatis veniam ab facere, amet deleniti animi dignissimos odio nulla saepe error tenetur expedita optio. Quos enim voluptates asperiores error dolorum!",
+        "year": 2020
+    },
+    {
+        "title": "Pariatur nam eos perspiciatis.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Accusantium eum dicta eligendi laborum assumenda ullam dolores nemo porro amet est consequatur recusandae, alias quisquam tempore ipsum similique consectetur quis rerum cumque fuga asperiores. Animi labore fugit provident rem!",
+        "year": 2019
+    },
+    {
+        "title": "Perferendis dolor culpa voluptatum.",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Atque soluta commodi quos ex est excepturi placeat veritatis possimus illum fugit, aliquid tenetur aliquam doloremque eveniet cupiditate a vero! Ipsam omnis totam pariatur ex in exercitationem rerum minima sunt!",
+        "year": 2019
+    }
+]

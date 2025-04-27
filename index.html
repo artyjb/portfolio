@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <script src="global.js" type="module"></script>
 </head>
-<div class="content-wrapper">
 <body>
-    
-    <h1>Arthur Brown</h1>
-    <div class="content-container">
-        <figure>
-            <img src="images/home_page.jpeg" alt="Me Skiing at Park City" class="scaled-image">
-           
-        </figure>
-        <p>
-            Hi I am a UCSD Student Graduating in June 2025. I am a Joint Mathematics and Economics Major with a Data Science Minor. 
-            I like playing basketball, golf and tennis. My career interests are to be an actuary. I am also a huge steelers fan. 
-            Right now I am looking for post graduation jobs.
-        </p>
+    <div class="content-wrapper">
+        <div class="home-content">
+            <h1>Arthur Brown</h1>
+            <figure>
+                <img src="images/home_page.jpeg" alt="Me Skiing at Park City" class="scaled-image">
+            </figure>
+            <p>
+                Hi I am a UCSD Student Graduating in June 2025. I am a Joint Mathematics and Economics Major with a Data Science Minor. 
+                I like playing basketball, golf and tennis. My career interests are to be an actuary. I am also a huge Steelers fan. 
+                Right now I am looking for post graduation jobs.
+            </p>
+        </div>
+    </div>
+    <script src="index.js" type="module" defer></script>
+    <div class="content-wrapper">
+        <h2 class="projects-title-home">Latest Projects</h2>
+        <div class="projects">
+            <!-- Dynamically added content will appear here -->
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <h2 class= "projects-title-home">My GitHub Stats</h2>
+        <div id="profile-stats">
+            <!-- Fetched GitHub data will be dynamically added here -->
+        </div>
     </div>
 </body>
-</div>
 </html>
