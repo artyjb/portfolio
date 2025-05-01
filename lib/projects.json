@@ -14,10 +14,12 @@
         "link": "https://github.com/artyjb/portfolio/tree/main/images/nutrient_breakdown.jpg"
     },
     {
-        "title": "Dolore repellat impedit repudiandae?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "title": "Deceptive Visualizations",
+        "image": "../project2/antilib.png",
         "description": "Blanditiis distinctio nemo similique libero alias officia ad odio natus aperiam, sit quibusdam eveniet officiis minus explicabo, cupiditate, iste est consequuntur voluptas facilis laboriosam consectetur quis in? Veniam, ullam nostrum?",
-        "year": 2023
+        "year": 2025,
+        "link": "https://artyjb.github.io/portfolio/project2/project2_report.html"
+
     },
     {
         "title": "Tenetur impedit quibusdam recusandae.",
