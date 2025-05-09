@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Arthur Brown</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="../global.js" type="module"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Arthur Brown</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="../global.js" type="module"></script>
 </head>
 <div class="content-wrapper">
-<body>
+
+  <body>
     <h1>Contact Me</h1>
     <div class="contact-container">
-        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
-        <form id="contact-form" action="mailto:arthurbrown203@gmail.com" method="GET">
-            <div class="form-row">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-row">
-                <label for="Body">Message:</label>
-                <textarea id="Body" name="body" rows="5" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+      <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+      <form id="contact-form" action="mailto:arthurbrown203@gmail.com" method="GET">
+        <div class="form-row">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-row">
+          <label for="Body">Message:</label>
+          <textarea id="Body" name="body" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
 
     <script>
-        // Get a reference to the form element
-        const form = document.getElementById('contact-form');
+      // Get a reference to the form element
+      const form = document.getElementById('contact-form');
 
-        // Add a listener to the form for the submit event
-        form?.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission
+      // Add a listener to the form for the submit event
+      form?.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
 
-            // Create a new FormData object from the form
-            const data = new FormData(form);
+        // Create a new FormData object from the form
+        const data = new FormData(form);
 
-            // Initialize the URL with the form's action
-            let url = form.action + "?";
+        // Initialize the URL with the form's action
+        let url = form.action + "?";
 
-            // Iterate over submitted fields and build URL parameters
-            for (let [name, value] of data) {
-                url += `${encodeURIComponent(name)}=${encodeURIComponent(value)}&`;
-            }
+        // Iterate over submitted fields and build URL parameters
+        for (let [name, value] of data) {
+          url += `${encodeURIComponent(name)}=${encodeURIComponent(value)}&`;
+        }
 
-            // Remove the trailing "&" from the URL
-            url = url.slice(0, -1);
+        // Remove the trailing "&" from the URL
+        url = url.slice(0, -1);
 
-            // Open the final URL
-            location.href = url;
-        });
+        // Open the final URL
+        location.href = url;
+      });
     </script>
-</body>
+  </body>
 </div>
+
 </html>

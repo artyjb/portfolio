@@ -15,6 +15,7 @@ let pages = [
   { url: 'projects/', title: 'Projects' },
   { url: 'contact/', title: 'Contact Me' },
   { url: 'resume/', title: 'Resume' },
+  { url: 'meta/', title: 'Meta' },
   { url: 'https://github.com/artyjb/', title: 'GitHub' }
 ];
 
@@ -90,7 +91,7 @@ export async function fetchJSON(url) {
   try {
     // Fetch the JSON file from the given URL
     const response = await fetch(url);
-     // Log the response object to the console
+    // Log the response object to the console
     console.log(response);
     if (!response.ok) {
       throw new Error(`Failed to fetch projects: ${response.statusText}`);
@@ -115,12 +116,11 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const article = document.createElement('article');
     article.innerHTML = `
       <${headingLevel}>${project.title}</${headingLevel}>
-      ${
-        project.link
-          ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">
+      ${project.link
+        ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">
                <img src="${project.image}" alt="${project.title}">
              </a>`
-          : `<img src="${project.image}" alt="${project.title}">`
+        : `<img src="${project.image}" alt="${project.title}">`
       }
       <p>${project.description}</p>
 
@@ -134,5 +134,5 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
 }
 
 export async function fetchGitHubData(username) {
-   return fetchJSON(`https://api.github.com/users/${username}`);
+  return fetchJSON(`https://api.github.com/users/${username}`);
 }

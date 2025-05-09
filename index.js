@@ -10,7 +10,7 @@ const githubData = await fetchGitHubData('artyjb');
 const profileStats = document.querySelector('#profile-stats');
 
 if (profileStats) {
-    profileStats.innerHTML = `
+  profileStats.innerHTML = `
         <div class="stat">
             <div class="number">${githubData.public_repos}</div>
             <div class="label">Public Repos</div>

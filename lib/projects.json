@@ -1,78 +1,77 @@
 [
-    {
-        "title": "Stuckit Stickers",
-        "image": "https://artyjb.github.io/portfolio/images/stuck_it.jpeg",
-        "description": "Stuckit Stickers is a product which allows skateboarders to share their tricks with the world. All you have to do is buy a sticker, scan the QR code, upload your skate trick to the sticker, and put the sticker where you please. Bonus points if you put the sticker where you did the trick! Learn more at <a href='https://www.stuckit.co/' target='_blank' rel='noopener noreferrer'>Stuckit.co</a>.",
-        "year": 2025,
-        "link": "https://www.stuckit.co/"
-    },
-    {
-        "title": "Grocery Store Visualization",
-        "image": "https://artyjb.github.io/portfolio/images/nutrient_breakdown.jpg",
-        "description": "Received Best Project Award (top 3% in class of 180 Students). This visualization shows the nutrient breakdown of an optimized grocery list with a 208 dollar budget. Click on the image to see more...",
-        "year": 2025,
-        "link": "https://github.com/artyjb/portfolio/tree/main/images/nutrient_breakdown.jpg"
-    },
-    {
-        "title": "Deceptive Visualizations",
-        "image": "https://artyjb.github.io/portfolio/project2/images/antilib.png",
-        "description": "Data can tell many different stories. In this project, abortion data from the same source was used to portray two different stories. Click on the image to see more...",
-        "year": 2025,
-        "link": "https://artyjb.github.io/portfolio/project2/project2_report.html"
-
-    },
-    {
-        "title": "Tenetur impedit quibusdam recusandae.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Cupiditate laborum quisquam dolor. Perspiciatis incidunt eligendi accusantium fugiat quasi asperiores rem reprehenderit minima recusandae veritatis laboriosam saepe, labore facilis quia odio quod similique cum deserunt mollitia officiis sit iste.",
-        "year": 2023
-    },
-    {
-        "title": "Hic cupiditate delectus incidunt!",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Et, esse distinctio? Voluptas, beatae maiores? Nihil vero enim ipsam eaque dolores praesentium dolorem officia vitae deleniti, odio veritatis, culpa illo maiores magnam sit? Aperiam perspiciatis molestias excepturi dolorem sequi.",
-        "year": 2022
-    },
-    {
-        "title": "Quibusdam optio porro nihil.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Similique exercitationem animi quisquam aperiam voluptas mollitia, blanditiis in architecto nulla accusamus itaque modi rerum nostrum officia laudantium doloremque ea dolor aliquid? Aut vitae autem veniam praesentium iste. Ipsam, quo.",
-        "year": 2022
-    },
-    {
-        "title": "Excepturi, sed iusto. Aliquam.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Consectetur, eaque minus aut, ipsa ad labore ullam accusamus quod fugiat libero commodi soluta dolores nulla nihil tempora debitis facilis velit sapiente beatae quo maiores, voluptatum itaque molestias? Veritatis, pariatur!",
-        "year": 2021
-    },
-    {
-        "title": "Voluptatibus in doloremque vel?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Culpa veritatis laborum eaque aperiam quis qui. Perspiciatis eius minima molestias ullam ea accusantium praesentium dignissimos quis sequi non dolorem iusto voluptatibus, earum illo laboriosam exercitationem ut nihil suscipit voluptatum!",
-        "year": 2021
-    },
-    {
-        "title": "Placeat cumque soluta magni.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ex similique soluta amet ratione maxime illo cupiditate, fugiat qui voluptas eum eos velit obcaecati quam voluptatibus nulla. Quas unde voluptatibus amet incidunt atque quasi earum tenetur inventore reiciendis omnis.",
-        "year": 2020
-    },
-    {
-        "title": "Natus esse rerum aliquam?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Debitis magni accusamus vero exercitationem laudantium eaque repellendus assumenda perspiciatis veniam ab facere, amet deleniti animi dignissimos odio nulla saepe error tenetur expedita optio. Quos enim voluptates asperiores error dolorum!",
-        "year": 2020
-    },
-    {
-        "title": "Pariatur nam eos perspiciatis.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Accusantium eum dicta eligendi laborum assumenda ullam dolores nemo porro amet est consequatur recusandae, alias quisquam tempore ipsum similique consectetur quis rerum cumque fuga asperiores. Animi labore fugit provident rem!",
-        "year": 2019
-    },
-    {
-        "title": "Perferendis dolor culpa voluptatum.",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Atque soluta commodi quos ex est excepturi placeat veritatis possimus illum fugit, aliquid tenetur aliquam doloremque eveniet cupiditate a vero! Ipsam omnis totam pariatur ex in exercitationem rerum minima sunt!",
-        "year": 2019
-    }
+  {
+    "title": "Stuckit Stickers",
+    "image": "https://artyjb.github.io/portfolio/images/stuck_it.jpeg",
+    "description": "Stuckit Stickers is a product which allows skateboarders to share their tricks with the world. All you have to do is buy a sticker, scan the QR code, upload your skate trick to the sticker, and put the sticker where you please. Bonus points if you put the sticker where you did the trick! Learn more at <a href='https://www.stuckit.co/' target='_blank' rel='noopener noreferrer'>Stuckit.co</a>.",
+    "year": 2025,
+    "link": "https://www.stuckit.co/"
+  },
+  {
+    "title": "Grocery Store Visualization",
+    "image": "https://artyjb.github.io/portfolio/images/nutrient_breakdown.jpg",
+    "description": "Received Best Project Award (top 3% in class of 180 Students). This visualization shows the nutrient breakdown of an optimized grocery list with a 208 dollar budget. Click on the image to see more...",
+    "year": 2025,
+    "link": "https://github.com/artyjb/portfolio/tree/main/images/nutrient_breakdown.jpg"
+  },
+  {
+    "title": "Deceptive Visualizations",
+    "image": "https://artyjb.github.io/portfolio/project2/images/antilib.png",
+    "description": "Data can tell many different stories. In this project, abortion data from the same source was used to portray two different stories. Click on the image to see more...",
+    "year": 2025,
+    "link": "https://artyjb.github.io/portfolio/project2/project2_report.html"
+  },
+  {
+    "title": "Tenetur impedit quibusdam recusandae.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Cupiditate laborum quisquam dolor. Perspiciatis incidunt eligendi accusantium fugiat quasi asperiores rem reprehenderit minima recusandae veritatis laboriosam saepe, labore facilis quia odio quod similique cum deserunt mollitia officiis sit iste.",
+    "year": 2023
+  },
+  {
+    "title": "Hic cupiditate delectus incidunt!",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Et, esse distinctio? Voluptas, beatae maiores? Nihil vero enim ipsam eaque dolores praesentium dolorem officia vitae deleniti, odio veritatis, culpa illo maiores magnam sit? Aperiam perspiciatis molestias excepturi dolorem sequi.",
+    "year": 2022
+  },
+  {
+    "title": "Quibusdam optio porro nihil.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Similique exercitationem animi quisquam aperiam voluptas mollitia, blanditiis in architecto nulla accusamus itaque modi rerum nostrum officia laudantium doloremque ea dolor aliquid? Aut vitae autem veniam praesentium iste. Ipsam, quo.",
+    "year": 2022
+  },
+  {
+    "title": "Excepturi, sed iusto. Aliquam.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Consectetur, eaque minus aut, ipsa ad labore ullam accusamus quod fugiat libero commodi soluta dolores nulla nihil tempora debitis facilis velit sapiente beatae quo maiores, voluptatum itaque molestias? Veritatis, pariatur!",
+    "year": 2021
+  },
+  {
+    "title": "Voluptatibus in doloremque vel?",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Culpa veritatis laborum eaque aperiam quis qui. Perspiciatis eius minima molestias ullam ea accusantium praesentium dignissimos quis sequi non dolorem iusto voluptatibus, earum illo laboriosam exercitationem ut nihil suscipit voluptatum!",
+    "year": 2021
+  },
+  {
+    "title": "Placeat cumque soluta magni.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Ex similique soluta amet ratione maxime illo cupiditate, fugiat qui voluptas eum eos velit obcaecati quam voluptatibus nulla. Quas unde voluptatibus amet incidunt atque quasi earum tenetur inventore reiciendis omnis.",
+    "year": 2020
+  },
+  {
+    "title": "Natus esse rerum aliquam?",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Debitis magni accusamus vero exercitationem laudantium eaque repellendus assumenda perspiciatis veniam ab facere, amet deleniti animi dignissimos odio nulla saepe error tenetur expedita optio. Quos enim voluptates asperiores error dolorum!",
+    "year": 2020
+  },
+  {
+    "title": "Pariatur nam eos perspiciatis.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Accusantium eum dicta eligendi laborum assumenda ullam dolores nemo porro amet est consequatur recusandae, alias quisquam tempore ipsum similique consectetur quis rerum cumque fuga asperiores. Animi labore fugit provident rem!",
+    "year": 2019
+  },
+  {
+    "title": "Perferendis dolor culpa voluptatum.",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Atque soluta commodi quos ex est excepturi placeat veritatis possimus illum fugit, aliquid tenetur aliquam doloremque eveniet cupiditate a vero! Ipsam omnis totam pariatur ex in exercitationem rerum minima sunt!",
+    "year": 2019
+  }
 ]

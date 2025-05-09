@@ -90,8 +90,8 @@ function renderPieChart(projectsGiven) {
     selectedIndex === -1
       ? projectsGiven.length
       : projectsGiven.filter(
-          (p) => String(p.year) === data[selectedIndex].label
-        ).length;
+        (p) => String(p.year) === data[selectedIndex].label
+      ).length;
 
   projectsTitle.textContent = `${visibleCount} Projects`;
 }
