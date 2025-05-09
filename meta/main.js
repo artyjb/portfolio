@@ -172,7 +172,7 @@ function renderScatterPlot(data, commitsData) {
       d3.select(event.currentTarget).style('fill-opacity', 1);
       renderTooltipContent(commit);
       updateTooltipVisibility(true);
-      //updateTooltipPosition(event);
+      updateTooltipPosition(event);
     })
     .on('mousemove', updateTooltipPosition)
     .on('mouseleave', (event) => {
