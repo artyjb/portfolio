@@ -15,17 +15,20 @@
     <h1>Meta</h1>
 
     <div style="display: flex; align-items: baseline; gap: 0.5rem;">
-      <label for="commit-progress">Show commits until:</label>
-      <input type="range" id="commit-progress" min="0" max="100" value="100" />
+      <label for="slider">Show commits until:</label>
+      <input type="range" id="slider" min="0" max="100" value="100" />
       <time id="commit-time" style="margin-left: auto;"></time>
     </div>
 
-    <dl id="files"></dl>
-
-    <div id="stats"></div>
+    <div id="metrics"></div>
 
     <h2>Commits by time of day</h2>
-    <div id="chart"></div>
+    <div id="viz"></div>
+
+    <dl id="files"></dl>
+
+
+
 
     <p id="selection-count">No commits selected</p>
     <dl id="language-breakdown" class="stats"></dl>
@@ -33,25 +36,14 @@
     <h2>My Commit Story</h2>
     <div id="scatter-story"></div>
 
-    <dl id="commit-tooltip" class="info tooltip" hidden>
-      <dt>Commit</dt>
-      <dd>
-        <a href="" id="commit-link" target="_blank" rel="noopener noreferrer"></a>
-      </dd>
-
-      <dt>Date</dt>
-      <dd id="commit-date"></dd>
-
-      <dt>Time</dt>
-      <dd id="commit-time-tooltip"></dd> <!-- ✅ fixed ID conflict -->
-
-      <dt>Author</dt>
-      <dd id="commit-author"></dd>
-
-      <dt>Lines edited</dt>
-      <dd id="commit-lines"></dd>
-    </dl>
+    <!-- Updated tooltip format -->
+    <div id="tooltip" class="tooltip" style="position: absolute; display: none;">
+      <div id="tooltip-content"></div>
+    </div>
   </div>
 </body>
+
+</html>
+
 
 </html>
