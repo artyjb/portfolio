@@ -1118,11 +1118,15 @@ a:hover {
 }
 
 /* Reusable info <dl> layout */
+/* Tooltip info layout */
 .info {
   display: grid;
   grid-template-columns: auto 1fr;
   column-gap: 0.5em;
   row-gap: 0.25em;
+  font-size: 0.9rem;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
 }
 
 .info dt {
@@ -1136,17 +1140,13 @@ a:hover {
   color: #222;
 }
 
-/* Hover animation for dots */
-circle {
-  transition: 200ms;
-  transform-origin: center;
-  transform-box: fill-box;
+/* Hide tooltip when not active */
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
 }
 
-circle:hover {
-  transform: scale(1.5);
-}
-
+/* Tooltip box styling */
 .tooltip {
   position: fixed;
   top: 1em;
@@ -1159,25 +1159,86 @@ circle:hover {
   backdrop-filter: blur(4px);
   z-index: 1000;
   pointer-events: auto;
+  max-width: 320px;
+  word-wrap: break-word;
 }
 
-dl.info {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 0.5em;
-  row-gap: 0.25em;
-  font-size: 0.9rem;
-  transition-duration: 500ms;
-  transition-property: opacity, visibility;
+/* Dot hover effect */
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 
-dl.info[hidden]:not(:hover, :focus-within) {
-  opacity: 0;
-  visibility: hidden;
+circle:hover {
+  transform: scale(1.5);
 }
 
+/* Highlighted and selected circles */
 circle.selected {
   fill: #ff6b6b;
   stroke: white;
   stroke-width: 1.5px;
+}
+
+.commit-circle {
+  transition: all 200ms, r calc(var(--r) * 100ms);
+}
+
+@starting-style {
+  .commit-circle {
+    r: 0;
+  }
+}
+
+/* File display container (flex version) */
+#files {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 10px;
+  min-height: 100%;
+}
+
+#files>div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+#files dt {
+  font-weight: bold;
+  color: #444;
+}
+
+#files dd {
+  margin: 0.25em 0;
+}
+
+/* Visual bar for individual lines */
+.loc {
+  width: 2px;
+  height: 12px;
+  flex: 0 0 auto;
+  background-color: var(--color, #aaa);
+}
+
+#files dd.lines {
+  display: flex;
+  flex-wrap: wrap;
+  /* enables wrapping */
+  gap: 2px;
+  /* spacing between lines */
+  max-width: 100%;
+  /* respect container width */
+}
+
+#files dd.lines .loc {
+  width: 4px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 2px;
 }
