@@ -1296,3 +1296,17 @@ circle.selected {
   font-weight: bold;
   margin: 1rem 0;
 }
+
+a {
+  color: #1a73e8;
+  /* Change to any color you want */
+  text-decoration: none;
+  /* Optional: removes underline */
+}
+
+a:hover {
+  color: #00458e;
+  /* Optional: changes color on hover */
+  text-decoration: underline;
+  /* Optional: adds underline on hover */
+}
