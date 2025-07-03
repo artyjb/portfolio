@@ -31,6 +31,7 @@
     "title": "Sports Betting Spread Analysis",
     "image": "https://artyjb.github.io/portfolio/images/spread.png",
     "description": "This Project analyzes the spread of sports betting data to identify patterns and trends. It uses Python and various libraries for data analysis and visualization. The goal of the project was to see if there was a hothand falacy at play.",
+    "year": 2024,
     "link": "https://github.com/artyjb/Sports-Betting-Spread-Analysis/blob/main/FinalProject_Group151-FA24.ipynb"
   }
 ]
